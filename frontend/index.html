@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Primary Meta Tags -->
+    <title>BaseConfess - Anonymous Confessions Onchain</title>
+    <meta name="title" content="BaseConfess - Anonymous Confessions Onchain" />
+    <meta name="description" content="Share your deepest secrets anonymously on Base. Pay 1 USDC for 30-day access to post confessions, react, and comment. Community-moderated safe space." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BaseConfess - Anonymous Confessions Onchain" />
+    <meta property="og:description" content="Share anonymous confessions, react, and engage in a moderated community on Base L2" />
+    <meta property="og:image" content="https://your-vercel-url.vercel.app/embed.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="BaseConfess - Anonymous Confessions Onchain" />
+    <meta property="twitter:description" content="Share anonymous confessions, react, and engage in a moderated community on Base L2" />
+    <meta property="twitter:image" content="https://your-vercel-url.vercel.app/embed.png" />
+
+    <!-- Farcaster Mini App Meta Tag -->
+    <meta
+      name="fc:frame"
+      content='{
+        "version": "next",
+        "imageUrl": "https://your-vercel-url.vercel.app/embed.png",
+        "button": {
+          "title": "Enter BaseConfess",
+          "action": {
+            "type": "launch_frame",
+            "name": "BaseConfess",
+            "url": "https://your-vercel-url.vercel.app",
+            "splashImageUrl": "https://your-vercel-url.vercel.app/splash.png",
+            "splashBackgroundColor": "#8b5cf6"
+          }
+        }
+      }'
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8b5cf6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+  <body class="bg-dark-950 text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

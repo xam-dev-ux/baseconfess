@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "BaseConfess",
+    "homeUrl": "https://your-vercel-url.vercel.app",
+    "iconUrl": "https://your-vercel-url.vercel.app/logo.png",
+    "splashImageUrl": "https://your-vercel-url.vercel.app/splash.png",
+    "splashBackgroundColor": "#7c3aed",
+    "subtitle": "Anonymous confessions onchain",
+    "description": "Share your deepest secrets anonymously on Base. Pay 1 USDC for 30-day access to post confessions, react, and comment.",
+    "screenshotUrls": [
+      "https://your-vercel-url.vercel.app/screenshots/1.png",
+      "https://your-vercel-url.vercel.app/screenshots/2.png",
+      "https://your-vercel-url.vercel.app/screenshots/3.png"
+    ],
+    "primaryCategory": "social",
+    "tags": ["anonymous", "confessions", "community", "secrets"],
+    "heroImageUrl": "https://your-vercel-url.vercel.app/hero.png",
+    "tagline": "Your secrets safely shared",
+    "ogTitle": "BaseConfess",
+    "ogDescription": "Share anonymous confessions and engage in a moderated community on Base L2",
+    "ogImageUrl": "https://your-vercel-url.vercel.app/embed.png",
+    "noindex": false
+  }
+}

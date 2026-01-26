@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+coverage.json
+.nyc_output/
+
+# Hardhat
+cache/
+artifacts/
+
+# Test
+*.test.coverage
+
+# Vercel
+.vercel
+
+# Local development
+*.local
