@@ -77,13 +77,13 @@ export function Landing() {
                 {step === 'approving' ? 'Approving USDC...' : 'Processing...'}
               </span>
             ) : (
-              'Get 30-Day Access - 1 USDC'
+              'Get 30-Day Access - 0.00001 USDC'
             )}
           </button>
 
           {isConnected && !hasEnoughBalance && (
             <p className="text-sm text-red-400">
-              Insufficient USDC balance ({(Number(usdcBalance) / 1e6).toFixed(2)} USDC)
+              Insufficient USDC balance ({(Number(usdcBalance) / 1e6).toFixed(6)} USDC)
             </p>
           )}
         </div>
