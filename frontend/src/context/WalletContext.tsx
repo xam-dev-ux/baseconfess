@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 import { BrowserProvider, Contract, JsonRpcSigner } from 'ethers';
 import { CONTRACT_ADDRESS, USDC_ADDRESS, BASE_CONFESS_ABI, USDC_ABI, BASE_CHAIN_ID, BASE_CHAIN_CONFIG } from '../utils/constants';
+import { BuilderCodeSigner } from '../utils/builderCode';
 import type { Access, GlobalStats } from '../types';
 
 interface WalletContextType {
@@ -132,7 +133,9 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         await switchToBase();
         // Re-create provider after switch
         const newProvider = new BrowserProvider(ethereum as unknown as { request: (...args: unknown[]) => Promise<unknown> });
-        const newSigner = await newProvider.getSigner();
+        const baseSigner = await newProvider.getSigner();
+        // Wrap with BuilderCodeSigner to add attribution to all transactions
+        const newSigner = new BuilderCodeSigner(newProvider, await baseSigner.getAddress());
         const newAddress = await newSigner.getAddress();
 
         setProvider(newProvider);
@@ -140,7 +143,9 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         setAddress(newAddress);
         setChainId(BASE_CHAIN_ID);
       } else {
-        const walletSigner = await browserProvider.getSigner();
+        const baseSigner = await browserProvider.getSigner();
+        // Wrap with BuilderCodeSigner to add attribution to all transactions
+        const walletSigner = new BuilderCodeSigner(browserProvider, await baseSigner.getAddress());
         const walletAddress = await walletSigner.getAddress();
 
         setProvider(browserProvider);
