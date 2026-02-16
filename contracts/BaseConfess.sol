@@ -110,7 +110,7 @@ contract BaseConfess is Ownable, ReentrancyGuard {
 
     // ============ Constants ============
     uint256 public constant ACCESS_DURATION = 30 days;
-    uint256 public constant ACCESS_PRICE = 1e6; // 1 USDC (6 decimals)
+    uint256 public constant ACCESS_PRICE = 10; // 0.00001 USDC (6 decimals)
     uint256 public constant MAX_CONFESSION_LENGTH = 500;
     uint256 public constant MAX_COMMENT_LENGTH = 200;
     uint256 public constant MIN_CONTENT_LENGTH = 1;

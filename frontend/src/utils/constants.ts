@@ -1,5 +1,5 @@
 // Contract addresses
-export const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || '0x962CbDb3aA822F72d07569D7d2f80c7630A63d6E';
+export const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || '0xadD16C796Cab6D6FEd1e6a057c267a06642E05b4';
 export const USDC_ADDRESS = import.meta.env.VITE_USDC_ADDRESS || '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913';
 
 // Base Network configuration
@@ -17,7 +17,7 @@ export const BASE_CHAIN_CONFIG = {
 };
 
 // Contract constants
-export const ACCESS_PRICE = BigInt(1_000_000); // 1 USDC (6 decimals)
+export const ACCESS_PRICE = BigInt(10); // 0.00001 USDC (6 decimals)
 export const ACCESS_DURATION = 30 * 24 * 60 * 60; // 30 days in seconds
 export const MAX_CONFESSION_LENGTH = 500;
 export const MAX_COMMENT_LENGTH = 200;
